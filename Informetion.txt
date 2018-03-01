@@ -1,0 +1,76 @@
+
+windows座机开机密码：12345
+
+windows笔记本开机密码：juniu88
+
+口碑服务商账号 1458813064@qq.com   Juniu5192136
+
+口碑商户账号   5192136@qq.com      Juniu2016（2018年1月8号修改的密码）
+
+登陆的网址：koubei.com
+
+旧登陆的pid的账号：https://desk.diankayi.net/common/dev/operator.htm?pid=1
+
+新的登陆的pid的账号：https://g.juniuo.com/alipay/2016070101570609/201610140192630149/item/pc/debugEntry.do?pid=1
+
+打印机官网：http://yilianyun.10ss.net/user/login
+
+打印机：账号：juniuo
+        密码：Juniuo@2016
+
+网址：https://exmail.qq.com/
+
+邮箱：wangzhiqiang@juniuo.com    密码S*********4
+
+美洽客服：wangzhiqiang@juniuo.com    密码S*********4
+
+jira登录网址：http://jira.juniuo.com/login.jsp
+
+账号：wangzhiqiang   密码S*********4
+
+座机：010-64124201   或者010-8044-1899
+
+小程序的账号：15811392601   密码：
+123456
+
+体验账号：13800138000 密码：koubei123456
+
+泽然给的账号：15811392601   密码：123456
+
+公司的手机号：18514664939  
+
+公司微信：18514664939（ju-niu）   Juniu213015  
+
+公司qq号：2082845751（桔牛科技）  Juniu213015 
+
+企业圈登录账号：18514664939    密码：Juniu213015 
+
+   {主账号刘孟盈：18611083559  密码：Juniu213015 }
+
+
+
+
+
+
+
+ 免费使用系统代码
+
+   .ant-modal-body{
+  /* display:none;!important;*/
+   width:100px;!important;
+
+  }
+  .ant-modal-content{
+    display:none;!important;
+  }
+  .ant-modal-wrap {
+    left:400px;!important;
+  }
+  .ant-modal-mask{
+    display:none;!important;
+  }
+
+
+
+
+

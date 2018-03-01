@@ -1,0 +1,80 @@
+付费功能网址：https://www.meiqia.com/pricing#service-cloud
+
+登录注册网址：https://www.meiqia.com/
+
+免费版：可以一直使用
+
+专业版：1888元/年 /客服  2个起售
+
+企业版是每座席每年3888 /年 /客服
+
+
+将代码复制到</body>之前（点击设置--点击网页插件）
+
+<script type='text/javascript'>
+    (function(m, ei, q, i, a, j, s) {
+        m[i] = m[i] || function() {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        j = ei.createElement(q),
+            s = ei.getElementsByTagName(q)[0];
+        j.async = true;
+        j.charset = 'UTF-8';
+        j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t';
+        s.parentNode.insertBefore(j, s);
+    })(window, document, 'script', '_MEIQIA');
+    _MEIQIA('entId', 95351);
+</script>
+
+
+
+
+
+
+我们需要的功能：在线聊天，能够实现一对多，留言记录用户电话，镶嵌在网页端，有介入提醒。
+
+美洽客服系统
+免费版
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

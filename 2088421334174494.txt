@@ -1,0 +1,96 @@
+
+
+http://www.guoxue.com/shibu/24shi/shiji/sjml.htm
+http://www.cnblogs.com/jiuweidezhanfang/p/5473118.html
+https://www.cnblogs.com/susanws/p/5717811.html
+http://jira.juniuo.com/login.jsp?permissionViolation=true&os_destination=%2Fbrowse%2FPCDEV-121&page_caps=&user_role=
+
+
+
+小品：https://api.imjad.cn/qqfm/v1/?type=album&page_size=10&id=38970&page=1
+小品明细 ：https://api.imjad.cn/qqfm/v1/?type=show&id=rd000CKxRL0Niutv
+小品播放：https://api.imjad.cn/qqfm/v1/?type=skip_show&id=rd000CKxRL0Niutv&shows=rd000lkIdG2wIARY
+
+
+
+
+https://www.melonbooks.co.jp/detail/detail.php?product_id=287010   日文网址
+
+
+http://blog.csdn.net/bright2017/article/details/74188320   引入jQuery
+
+
+
+
+
+http://blog.csdn.net/mr_wuch/article/details/70225364    vue开发环境引入echarts并使用。
+
+http://blog.csdn.net/zww1984774346/article/details/51498604   vue开发环境引入echarts并使用折线图。
+
+http://blog.csdn.net/generon/article/details/78447311  vue开发环境引入echarts并使用。
+
+http://echarts.baidu.com/tutorial.html#5%20%E5%88%86%E9%92%9F%E4%B8%8A%E6%89%8B%20ECharts   echarts使用说明
+
+https://angular.cn/guide/quickstart  angular的学习
+
+
+https://www.cnblogs.com/smuxiaolei/p/7484678.html  git的学习
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+大家晚上好，很不好意思，因为早上发的视频链接因为点击量过大，导致短链被封了，导致后面的小伙伴全部无法看到视频，很抱歉！
+
+所以晚上把原始链接同步给大家，如下：
+
+
+λ  KTV预约（奖励50元/ 门店）
+http://v.youku.com/v_show/id_XMzE3NTUyNjMyMA==.html?spm=a2h3j.8428770.3416059.1
+
+
+λ  手艺人预约（奖励50元/ 门店）
+http://v.youku.com/v_show/id_XMzE3NTUyNDM2MA==.html?spm=a2h3j.8428770.3416059.1
+
+λ  扫码枪一秒核销商品 
+http://v.youku.com/v_show/id_XMzE3NTQxNTUyNA==.html?spm=a2h3j.8428770.3416059.1
+
+λ  桔牛整套解决方案 （ 奖金1380元）
+http://v.youku.com/v_show/id_XMzE3NTg4OTE0MA==.html?spm=a2h3j.8428770.3416059.1
+
+
