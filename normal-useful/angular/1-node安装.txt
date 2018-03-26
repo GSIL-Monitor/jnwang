@@ -1,0 +1,29 @@
+1 下载node的安装包，按照步骤安装，一路确认就行
+
+2 安装完毕，检查一下node是不是安装成功。指令：node -v    npm -v 
+
+3 node 安装成功  npm 没有安装成功
+
+4 查看一下，系统环境变量Path 里面有没有node的路径，有的话就不用管，没有就加上
+
+5 在 nodejs 里面 创建 node_cache 和node_global  两个文件。
+
+6 找到nodejs\node_modules\npm里面有一个 npmrc  的文件 通过记事本打开
+ 
+内容更改为： prefix=D:\nodejs\node_global
+
+             cache=D:\nodejs\node_cache
+
+7 这时候 打开dosc系统，检查一下npm 是否安装成功，这是后是显示成功的，但是有些命令会提示不是内部文件
+
+8 打开环境变量页面，
+
+    在系统变量中增加
+
+     NODE_PATH 值：D:\nodejs\node_global\node_modules
+
+    在用户变量
+
+     PATH中 加入：D:\nodejs\node_global
+
+9 这样ng命令就能正常使用了
