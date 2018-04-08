@@ -1,0 +1,3 @@
+在vue开发环境中请求本地数据。
+1 在本地的static中创建json数据
+2 在使用vue-resource 请求 请求出来即可

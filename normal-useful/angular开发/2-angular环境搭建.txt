@@ -1,0 +1,7 @@
+1 在将node 和npm 安装成功，和环境配置好后，现在就开始搭建angular的开发环境
+
+2 npm install -g @angular/cli  全局安装angular的脚手架
+
+3 ng new myapp    切换到开发项目的目录，创建项目
+
+4 安装完毕 切换到myapp   运行项目 ：npm serve  --open

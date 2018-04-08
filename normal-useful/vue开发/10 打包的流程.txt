@@ -1,0 +1,11 @@
+Vue开发项目的打包
+1 将config文件中的index.js 做修改
+  在下面的build区域
+    assetsSubDirectory: 'static',
+    assetsPublicPath: '/',
+修改为：assetsSubDirectory: 'static',
+        assetsPublicPath: './',
+
+在开发项目中调出docs系统书如 npm run build
+
+运行完毕后将生成的dist文件中的static文件，复制一下，粘贴到与dist文件同级的地方（这里面的可以只保留数据，js，css可以删除的）

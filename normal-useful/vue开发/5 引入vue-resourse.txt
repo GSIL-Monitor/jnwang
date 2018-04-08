@@ -1,0 +1,18 @@
+ 在vue 开发环境中引入vue-resource 请求实现页面的请求数据
+
+1 打开dosc系统，切换到指定目录（ctrl+R）
+
+2 输入npm install vue-resource --save     回车
+
+3 安装完毕后，在开发项目中的src中 找一下main.js 这个文件打开后将vue引入并使用代码如下：
+     import VueResource from 'vue-resource'
+
+     Vue.use(VueResource)
+
+4 这样在整个开发的项目中就可以使用请求（this.$http.get().then(）,this.$http.post().then(）,this.$http.jsonp().then(）)
+
+5 要想打开页面就加在请求的内容，就在钩子函数中写入。钩子函数与data（）{}，methods：{}。是并列的代码如下：
+
+ created(){
+          this.qing()
+      },

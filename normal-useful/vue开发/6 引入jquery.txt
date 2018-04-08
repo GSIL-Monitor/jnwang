@@ -1,0 +1,41 @@
+在vue开发环境中引入jquery 包使用jquery
+
+
+1：因为已经安装了vue脚手架，所以需要在webpack中全局引入jquery
+
+      打开package.json文件，在里面加入这行代码，jquery后面的是版本，根据你自己需求更改。    
+
+ 
+      dependencies:{
+
+  "jquery":"^2.2.3"
+
+       }
+
+      然后在命令行中npm install
+ 
+2：在webpack.base.conf.js中加入一行代码
+
+ var webpack=require("webpack")
+
+
+
+3：在webpack.base.conf.js中module.exports的最后加入这行代码，
+
+  plugins: [
+new webpack.optimize.CommonsChunkPlugin('common.js'),
+new webpack.ProvidePlugin({
+    jQuery: "jquery",
+    $: "jquery"
+})
+]
+
+4：在main.js中引入,加入下面这行代码
+
+      import $ from 'jquery'
+
+5：最后一步，重新跑一边就好，npm run dev 
+
+
+vue开发环境引入jquery包：http://blog.csdn.net/bright2017/article/details/74188320
+

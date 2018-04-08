@@ -1,0 +1,171 @@
+清除项目默认的页面和图片
+
+在APP.vue 中将img 标签删除
+将里面的样式也删除，不让会对后期有影响。
+
+在项目中的src 中修改
+1 在asset中创建一个images文件存放tabbar的logo
+
+2 在src中创建一个pages文件，里面创建几个后缀为vue的文件，有几个导航就创建几个，分别命名index.vue。tab2.vue。tab3.vue。tab4.vue。tab5.vue
+
+3 在router文件中index.js 中修改一下路由，代码如下：
+-------------------------------------------------------------------------------------------------
+import Vue from 'vue'
+import Router from 'vue-router'
+import HelloWorld from '@/components/HelloWorld'
+import Index from "../pages/index.vue"
+import Tab2 from "../pages/tab2.vue"
+import Tab3 from "../pages/tab3.vue"
+import Tab4 from "../pages/tab4.vue"
+import Tab5 from "../pages/tab5.vue"
+
+Vue.use(Router)
+
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'index',
+      component: Index
+    },
+    {
+      path: '/tab2',
+      name: 'tab2',
+      component: Tab2
+    }, {
+      path: '/tab3',
+      name: 'tab3',
+      component: Tab3
+    }, {
+      path: '/tab4',
+      name: 'tab4',
+      component: Tab4
+    }, {
+      path: '/tab5',
+      name: 'tab5',
+      component: Tab5
+    },
+  ]
+})
+-------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+3 在components 中创建一个tabbar.vue 和tabbaritem.vue  的文件。
+  tabbaritem.vue中的内容如下：
+-------------------------------------------------------------------------------------------------
+<template>
+  <div class="tabbaritem" @click="change()">
+    <span v-show="bol"><slot name="normal"></slot><br></span>
+    <span v-show="!bol"><slot name="active"></slot><br></span>
+    <span :class="{red:bol}" class="tabbaritemtext"><slot ></slot></span>
+  </div>
+</template>
+-------------------------------------------------------------------------------------------------
+<script>
+  export default {
+    props:["mark"],
+    data(){
+      return {}
+    },
+    methods:{
+      change:function(){
+        this.$emit("listen",this.mark)
+      }
+    },
+    computed:{
+      bol(){
+        if(this.mark==this.$parent.value){
+          return true
+        }
+      }
+    }
+  }
+</script>
+-------------------------------------------------------------------------------------------------
+<style type="text/css">
+  .tabbaritem{
+    float:left;
+    width:20%;
+    text-align:center;
+    font-size:12px;
+  }
+  .tabbaritem img{
+    width:45%
+  }
+  .red{
+    color:red;
+  }
+  .tabbaritemtext{
+    position:relative;
+    top:-5px;
+  }
+</style>
+-------------------------------------------------------------------------------------------------
+
+tabbar.vue 中的代码：
+-------------------------------------------------------------------------------------------------
+<template>
+  <div class="tabbar clearfix">
+    <TabbarItem @listen="getval()" mark="tab1">
+      <router-link to="./" slot="normal"><img src="../assets/images/1.png" alt=""></router-link>
+      <router-link to="./" slot="active"><img src="../assets/images/1-1.png" alt=""></router-link>
+      天气
+    </TabbarItem>
+    <TabbarItem @listen="getval()" mark="tab2" >
+      <router-link to="./tab2" slot="normal"><img src="../assets/images/2.png" alt=""></router-link>
+      <router-link to="./tab2" slot="active"><img src="../assets/images/2-2.png" alt=""></router-link>
+      一言
+    </TabbarItem>
+    <TabbarItem @listen="getval()" mark="tab3" >
+      <router-link to="./tab3" slot="normal"><img src="../assets/images/3.png" alt=""></router-link>
+      <router-link to="./tab3" slot="active"><img src="../assets/images/3-3.png" alt=""></router-link>
+      图片
+    </TabbarItem>
+    <TabbarItem @listen="getval()" mark="tab4" >
+      <router-link to="./tab4" slot="normal"><img src="../assets/images/4.png" alt=""></router-link>
+      <router-link to="./tab4" slot="active"><img src="../assets/images/4-4.png" alt=""></router-link>
+      音乐
+    </TabbarItem>
+    <TabbarItem @listen="getval()" mark="tab5">
+      <router-link to="./tab5" slot="normal"><img src="../assets/images/5.png" alt=""></router-link>
+      <router-link to="./tab5" slot="active"><img src="../assets/images/5-5.png" alt=""></router-link>
+      视频
+    </TabbarItem>
+  </div>
+</template>
+-------------------------------------------------------------------------------------------------
+<script>
+  import TabbarItem from "./tabbaritem.vue"
+  export default{
+    props:["value"],
+    components:{
+      TabbarItem
+    },
+    data(){
+      return { }
+    },
+    methods:{
+      getval:function(){
+
+      }
+    },
+  }
+</script>
+-------------------------------------------------------------------------------------------------
+<style type="text/css">
+  .tabbar{
+    position:fixed;
+    left:0;
+    bottom:0;
+    border-top:1px solid #ccc;
+    height:53px;
+    width:100%;
+    z-index:200;
+    background-color:#fff;
+  }
+</style>
+-------------------------------------------------------------------------------------------------

@@ -1,0 +1,9 @@
+vue开发环境的icon的引入和使用
+
+首先准备一张 后缀为ico的 图片，将他存放在static中
+
+在index.html 中 写入
+
+ <link rel="icon" href="static/icon.cio" type="image/x-icon">
+
+ 这里的路径可以在浏览器中调试窗口看到，路径错误的话，也可以调整一下。看一下自己的icon打包后在哪里，这里的路径就改成什么就可以了

@@ -1,0 +1,27 @@
+nodejs的安装和环境配配置（在window8 环境下的设置）
+
+1 从官网下载并安装nodejs。选择的路径是D盘，一路确认安装完成
+
+2 调出crm命令行 输入 node -v  查看一下nodejs 是否安装成功
+
+                输入 npm  -v 查看一下npm是否安装成功
+
+3 结果是node 安装成功 npm 没有安装
+
+4 在nodejs文件中创建npminfo里面分别创建npm 和npm_cache 2个文件。
+
+5 在环境变量中加入
+
+     NODE_PATH:D:\nodejs\npminfo\npm\node_moudle
+
+     PATH:D\nodejs\npm\
+
+6 修改一下文件：在nodejs\node_moudle\npm中找到npmrc
+
+     内容修改为：prefix=D:\nodejs\npminfo\npm
+
+                 cache=D:\nodejs\npminfo\npm_cache
+
+7 这时重新打开crm输入npm -v查一下npm是否安装成功和node-v 查看一下node的安装是不是完成。
+
+8 如果还是显示的是npm没有安装成功的话，请百度一下网上的安装流程。
