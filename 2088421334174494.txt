@@ -5,6 +5,8 @@ http://www.cnblogs.com/jiuweidezhanfang/p/5473118.html
 https://www.cnblogs.com/susanws/p/5717811.html
 http://jira.juniuo.com/login.jsp?permissionViolation=true&os_destination=%2Fbrowse%2FPCDEV-121&page_caps=&user_role=
 
+https://api.imjad.cn/cloudmusic/?type=search&s=1000
+https://api.imjad.cn/cloudmusic/?type=search&search_type=1004&s=1000
 
 
 Ð¡Æ·£ºhttps://api.imjad.cn/qqfm/v1/?type=album&page_size=10&id=38970&page=1
