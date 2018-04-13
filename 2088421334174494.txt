@@ -39,6 +39,9 @@ https://angular.cn/guide/quickstart  angular的学习
 https://www.cnblogs.com/smuxiaolei/p/7484678.html  git的学习
 
 
+vue开发环境选择图片上传：http://waynecz.github.io/VueImgInputer/index.html
+
+
 
 
 
