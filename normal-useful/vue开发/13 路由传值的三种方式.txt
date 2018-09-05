@@ -1,0 +1,60 @@
+  网址 ;https://segmentfault.com/a/1190000012393587
+
+
+<li v-for="article in articles" @click="getDescribe(article.id)">
+
+
+方案一：
+ getDescribe(id) {
+        this.$router.push({
+          path: `/describe/${id}`, // 这个不是 引号， 是一个飘号。
+        })
+
+ {
+     path: '/describe/:id',
+     name: 'Describe',
+     component: Describe
+   }
+
+在子模块中 读取;$route.params.id
+
+方案二：
+
+ this.$router.push({
+          name: 'Describe',
+          params: {
+            id: id
+          }
+        })
+
+
+路由index.js 中写入： 
+ {
+     path: '/describe',
+     name: 'Describe',
+     component: Describe
+   }
+
+获取参数：$route.params.id
+
+
+方案二：
+
+
+ this.$router.push({
+          path: '/describe',
+          query: {
+            id: id
+          }
+        })
+
+
+路由index.js 中写入： 
+
+ {
+     path: '/describe',
+     name: 'Describe',
+     component: Describe
+   }
+获取参数：$route.query.id
+

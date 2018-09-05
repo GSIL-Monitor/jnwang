@@ -14,7 +14,7 @@ nodejs的安装和环境配配置（在window8 环境下的设置）
 
      NODE_PATH:D:\nodejs\npminfo\npm\node_moudle
 
-     PATH:D\nodejs\npm\
+     PATH:D:\nodejs\npm\
 
 6 修改一下文件：在nodejs\node_moudle\npm中找到npmrc
 

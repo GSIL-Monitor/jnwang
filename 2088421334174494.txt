@@ -11,8 +11,9 @@ https://api.imjad.cn/cloudmusic/?type=search&search_type=1004&s=1000
 
 小品：https://api.imjad.cn/qqfm/v1/?type=album&page_size=10&id=38970&page=1
 小品明细 ：https://api.imjad.cn/qqfm/v1/?type=show&id=rd000CKxRL0Niutv
+https://api.imjad.cn/qqfm/v1/?type=show&id=rd003gsc3u4OvhPH
 小品播放：https://api.imjad.cn/qqfm/v1/?type=skip_show&id=rd000CKxRL0Niutv&shows=rd000lkIdG2wIARY
-
+https://api.imjad.cn/qqfm/v1/?type=skip_show&id=rd003gsc3u4OvhPH&shows=rd000gSRhL0GS54K
 
 
 
@@ -41,6 +42,7 @@ https://www.cnblogs.com/smuxiaolei/p/7484678.html  git的学习
 
 vue开发环境选择图片上传：http://waynecz.github.io/VueImgInputer/index.html
 
+ 路由三种传值方式网址 ;https://segmentfault.com/a/1190000012393587
 
 
 
