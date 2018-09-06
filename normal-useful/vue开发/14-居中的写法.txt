@@ -1,0 +1,19 @@
+居中的写法：
+
+首先是盒子的居中：分块级元素和转行级元素的居中；
+
+    转行级元素 用到的是：display:inline-block;text-align:cneter;
+
+块级元素居中：知道宽高和不知道宽高
+
+    通用型(知道不知道都行)：position：absolute;left:0; right:0;top;0bottom:0;margin ;auto;
+
+    知道宽高的：
+     position:absolute;left:50%;top:50%;margin-left:-（宽）/2 px;matgin-top:-(高)/2 px;
+
+ 最新的布局方式 flex 布局（使用vue 经常使用到的）
+
+
+
+
+
