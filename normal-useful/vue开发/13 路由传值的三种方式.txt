@@ -16,7 +16,7 @@
      component: Describe
    }
 
-在子模块中 读取;$route.params.id
+在子模块中 读取;this.$route.params.id
 
 方案二：
 
@@ -35,7 +35,7 @@
      component: Describe
    }
 
-获取参数：$route.params.id
+获取参数：this.$route.params.id
 
 
 方案二：
@@ -56,5 +56,5 @@
      name: 'Describe',
      component: Describe
    }
-获取参数：$route.query.id
+获取参数：this.$route.query.id
 
