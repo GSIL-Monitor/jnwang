@@ -1,0 +1,11 @@
+小程序的标签
+ 
+ <view ></view >   这个相当于div 的使用 
+
+ <text></text>      这个相当于p标签的使用
+
+ 命名和css 的一样，例如 <view class="tophead" >我是头部区域</view >
+
+ 事件现在只学到一种，就是点击事件 bindtap="clickme"
+
+ 例如：<view class="tophead" bindtap="clickme">我是头部区域，请点击我</view >

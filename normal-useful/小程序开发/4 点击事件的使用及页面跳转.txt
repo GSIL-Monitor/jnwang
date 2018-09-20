@@ -1,0 +1,26 @@
+页面上对标签进行时间绑定，在js中对时间进行定义，跳转的路由也是通过时间进行的
+
+<view class= "qingqiu" bindtap=""qingqiudata" "></view>
+
+在js中写入ES6 或者ES5的 都是可以实现的
+
+qingqiudata这个写入pages对象中
+
+   qingqiudata：function（）{
+     console.log(12312412)
+    wx.request({
+	url:"",
+	data:"",
+  	method:"GET",
+	success:function(res){
+		console.log(res)
+
+	 }
+
+      })
+    }
+
+
+这样通过点击事件，就能请求道想要的数据。注意。域名需要在微信你小程序中事先配置好才能在请求事件中设置好
+
+一个月能设置最多5次域名的绑定。

@@ -1,12 +1,8 @@
 
 
-http://www.guoxue.com/shibu/24shi/shiji/sjml.htm
-http://www.cnblogs.com/jiuweidezhanfang/p/5473118.html
-https://www.cnblogs.com/susanws/p/5717811.html
-http://jira.juniuo.com/login.jsp?permissionViolation=true&os_destination=%2Fbrowse%2FPCDEV-121&page_caps=&user_role=
-
-https://api.imjad.cn/cloudmusic/?type=search&s=1000
-https://api.imjad.cn/cloudmusic/?type=search&search_type=1004&s=1000
+http://www.guoxue.com/shibu/24shi/shiji/sjml.htm  国学的经典
+http://www.cnblogs.com/jiuweidezhanfang/p/5473118.html  git 的安装与使用
+https://www.cnblogs.com/susanws/p/5717811.html  手机端滑屏的使用
 
 
 小品：https://api.imjad.cn/qqfm/v1/?type=album&page_size=10&id=38970&page=1
@@ -15,16 +11,7 @@ https://api.imjad.cn/qqfm/v1/?type=show&id=rd003gsc3u4OvhPH
 小品播放：https://api.imjad.cn/qqfm/v1/?type=skip_show&id=rd000CKxRL0Niutv&shows=rd000lkIdG2wIARY
 https://api.imjad.cn/qqfm/v1/?type=skip_show&id=rd003gsc3u4OvhPH&shows=rd000gSRhL0GS54K
 
-
-
-https://www.melonbooks.co.jp/detail/detail.php?product_id=287010   日文网址
-
-
 http://blog.csdn.net/bright2017/article/details/74188320   引入jQuery
-
-
-
-
 
 http://blog.csdn.net/mr_wuch/article/details/70225364    vue开发环境引入echarts并使用。
 
@@ -43,6 +30,37 @@ https://www.cnblogs.com/smuxiaolei/p/7484678.html  git的学习
 vue开发环境选择图片上传：http://waynecz.github.io/VueImgInputer/index.html
 
  路由三种传值方式网址 ;https://segmentfault.com/a/1190000012393587
+
+
+https://api.imjad.cn/qqfm.md   企鹅FM
+
+https://etherscan.io/address/0x9d9207ed237d3294f01c93c22057390618bf6398#tokentxns     Eth查询桔牛的
+
+http://json.cn   转换json
+
+www.ntfen.com/portal.php  韩国粉
+
+www.daodejing.org   道德经
+
+https://github.com  github使用
+
+lbs.amap.com/api/  高德地图的使用
+
+youchain.cc    有令的官网
+
+https://note.youdao.com/web/#/file/recent/default/WEBb03f8b5889b5fb58dab080f267fb9cfe/有道云
+
+https://www.aliyun.com/?utm_medium=text&utm_source=bdbrand&utm_campaign=bdbrand&utm_content=se_32492&accounttraceid=38dbe313-9afc-490c-b0f6-e686577874b7   阿里云
+
+https://juniuo.worktile.com/signin?returnUrl=%2F  需求的提交。
+
+https://www.qyquan.cn/index/netjoin.html  企业圈的使用
+
+https://angular.cn/guide/quickstart  angular的使用与开发
+
+
+
+
 
 
 

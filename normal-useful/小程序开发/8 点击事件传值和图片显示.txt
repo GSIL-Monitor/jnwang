@@ -1,0 +1,46 @@
+<!--movieTpl.wxml-->
+<template name="movies">
+  <block wx:for="{{movies}}">
+    <view class="movie" bindtap="detail" id="{{item.id}}">
+      <view class="pic">
+        <image src="{{item.images.medium}}" mode="aspectFit" />
+      </view>
+      <view class="movie-info">
+          <view class="base-info">
+            <text>{{item.basicInfo}}</text>
+          </view>
+        </view>
+    </view>
+    <view class="hr"></view>
+  </block>
+</template>
+
+https://blog.csdn.net/u013502146/article/details/53651321
+
+通过：利用缓存，在home.js缓存id，然后从detail.js处取出
+
+//home.js
+detail:function(e) {//点击事件e为参数
+     wx.setStorageSync('id', e.currentTarget.id)
+     wx.navigateTo({
+         url: '../detail/detail',
+        })
+    }
+跳转模块的js中获取。-------------------------
+loadMovie: function() {
+        var page = this;
+        var id = wx.getStorageSync('id');
+        wx.request({
+          url: 'https://api.douban.com/v2/movie/subject/'+id,//需要传递具体的id才能加载电影；
+          header: {
+              'Content-type': 'json'
+          },
+          success: function(res){
+            var subject=res.data;//
+            subjectUtil.processSubject(subject);
+            page.setData({movie:subject});
+          },
+          complete:function(e) {
+            wx.hideToast();
+          }
+        });```

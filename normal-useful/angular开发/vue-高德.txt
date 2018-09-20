@@ -17,6 +17,7 @@ http://m.amap.com/around/?locations=116.470098,39.992838&keywords=租房&defaultIn
 
 
 确定地址坐标：http://lbs.amap.com/console/show/picker
+http://m.amap.com/navi/?dest=116.470098,39.992838&destName=阜通西&hideRouteIcon=1&key=6053a28dadf05b425093cf05f85687be
 
 
 

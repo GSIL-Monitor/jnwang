@@ -1,0 +1,133 @@
+1小程序的导航条的写入
+
+pages中写入所有页面的路径，是所有的页面，因为只要有页面就必须写进去。
+
+window中设置一下小程序抬头的样式效果，包括文字
+
+创建一个tabBar
+color:"#fi888w" 颜色采用十六进制的写法也可以写英文不建议写
+
+selectedColor:"#ddd" 这里比较简单，直接使用选中的后的语言，赋给它颜色
+
+borderStyle:"white"  驼峰命名 这个是固定的 其他的样式也需要写成驼峰命名的方式。
+
+backgroundColor:"#fff"驼峰命名 这个是固定的 其他的样式也需要写成驼峰命名的方式。
+
+list：[{
+        "text":"音乐",                            text 是导航的文字
+        
+        "pagePath":"pages/index/index",           pagePath当点击后要跳转到那个页面的路径
+   
+        "iconPath": "pages/image/1-1.png",        iconPath 导航图片的路径
+
+        "selectedIconPath": "pages/image/1.png"   selectedIconPath 当被点击后图片修改为什么的路径
+        }，
+{
+        "text":"音乐",                            text 是导航的文字
+        
+        "pagePath":"pages/index/index",           pagePath当点击后要跳转到那个页面的路径
+   
+        "iconPath": "pages/image/1-1.png",        iconPath 导航图片的路径
+
+        "selectedIconPath": "pages/image/1.png"   selectedIconPath 当被点击后图片修改为什么的路径
+        }
+
+     ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------
+
+
+
+
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/indextwo/index",
+    "pages/pin/index",
+    "pages/sheng/index",
+    "pages/er/index",
+    "pages/jing/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "记录流",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#FFD700",
+    "borderStyle": "white",
+    "backgroundColor": "#FFFFFF",
+    "list":[
+    {
+        "text":"音乐",
+        "selectedColor": "glod",
+        "pagePath":"pages/index/index",
+        "iconPath": "pages/image/1-1.png",
+        "selectedIconPath": "pages/image/1.png"
+       
+      },
+      {
+        "text":"小品",
+        "selectedColor": "glod",
+        "pagePath":"pages/pin/index",
+        "iconPath": "pages/image/2-2.png",
+        "selectedIconPath": "pages/image/2.png"
+
+      },
+      {
+        "text":"生活",
+        "selectedColor": "glod",
+        "pagePath":"pages/sheng/index",
+        "iconPath": "pages/image/3-3.png",
+        "selectedIconPath": "pages/image/3.png"
+
+      },
+      {
+        "text":"儿童",
+        "selectedColor": "glod",
+        "pagePath":"pages/er/index",
+        "iconPath": "pages/image/4-4.png",
+        "selectedIconPath": "pages/image/4.png"
+
+      },
+      {
+        "text":"经典",
+        "selectedColor": "glod",
+        "pagePath":"pages/jing/index",
+        "iconPath": "pages/image/5-5.png",
+        "selectedIconPath": "pages/image/5.png"
+
+      }
+    
+    
+    
+      
+    ]
+  }
+}

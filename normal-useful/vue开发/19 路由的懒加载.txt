@@ -1,0 +1,19 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+Vue.use(Router)
+
+export default new Router({
+
+ router:[
+  {
+   path:'/Login',
+   name:'Login',
+   component:resolve=> require(['@/components/Login'],resolve)
+   }
+
+   
+  ]
+
+})
+
+后面的组件选在自己写上就行，关键点是：resolve 请求里面是一个数组加个逗号加resolve 编译

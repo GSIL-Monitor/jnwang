@@ -1,0 +1,13 @@
+有了事件 就希望的是能在页面加载完成后就显示出来应该的数据
+
+实现的方式是在页面的js中设置一下onload里面的内容即可
+
+
+在pages中写入或者找到onload({})
+
+
+onload({
+  	this.qingqiudata()
+	})
+
+这里使用的是this 的语法，这里支持ES5 和ES6 的使用 this 的指向是wx这个对象，不是function这个对象。
