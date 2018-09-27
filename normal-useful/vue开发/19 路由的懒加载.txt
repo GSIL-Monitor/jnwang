@@ -17,3 +17,6 @@ export default new Router({
 })
 
 后面的组件选在自己写上就行，关键点是：resolve 请求里面是一个数组加个逗号加resolve 编译
+
+
+https://www.cnblogs.com/lijuntao/p/7777581.html
