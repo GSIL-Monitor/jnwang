@@ -1,0 +1,331 @@
+	/* 统一的公用内容 */
+	body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,table,dl,dd{margin:0;padding:0;}
+	input,img{		border:none;	}
+	ul,ol,li{list-style: none}
+	a{text-decoration: none}
+	header,nav,article,aside,section{display:block;}
+	.clearfix:after{
+		content:"200B";
+		display:block;
+		height:0;
+		font-size:0;
+		clear:both;
+	}
+
+
+/* 导航的公用内容 */
+	.topNav{
+		width:100%;
+		height:40px;
+		border-bottom:1px solid #ccc;
+		background-color:#fff;
+
+	}
+	.topNavLeft{
+		float:left;
+		height:40px;
+
+	}
+	.topNavLeft img{
+		height:100%;
+
+	}
+	.topNavMid{
+		float:left;
+
+	}
+		.navLi{
+			float:left;
+			padding:0 12px;
+			height:40px;
+			line-height:40px;
+			font-size:12px;
+			color:#000;
+		}
+	.topNavRight{
+		float:right;
+		position:relative;
+		width:300px;
+		height:32px;
+		padding-top:8px;
+
+	}
+	.searchtext{
+		display:block;
+		width:142px;
+		height:28px;
+		float:left;
+		position:relative;
+		border:1px solid #ccc;
+		border-radius:15px;
+		margin-right:28px;
+		margin-top:-3px;
+
+	}
+	.searchInput{
+		position:absolute;
+		left:14px;
+		top:0;
+		width:100px;
+		height:24px;
+
+		
+	}
+	.searchh{
+		width:16px;
+		height:16px;
+		background-image:url("../images/searchh.jpg");
+		position:absolute;
+		right:7px;
+		top:7px;
+	}
+	.ownCenter{
+		float:left;
+		width:26px;
+		height:26px;
+		background-image:url("../images/ownlogo.jpg");
+		margin-right:8px;
+	}
+	.logsign{
+		float:left;
+		font-size:12px;
+		line-height:22px;
+		height:22px;
+	}
+
+/* 侧边栏的公用内容 */
+
+	.aside{
+		position:fixed;
+		left:0;
+		top:30%;
+		height:150px;
+		width:45px;
+	}
+	.classType{
+		height:45px;
+		width:45px;
+		
+		background-image:url("../images/icons.png");
+		background-repeat: no-repeat;
+		background-position: -3px -158px;
+		background-color: #f03a47
+	}
+	.commitText{
+		height:45px;
+		width:45px;
+		margin-top:6px;
+		background-image:url("../images/icons.png");
+		background-repeat: no-repeat;
+		background-position: -3px -252px;
+		background-color: #ccc;
+
+	}
+	.tougao{
+		background-color:#f03a47;
+		height:45px;
+		width:90px;
+		line-height:45px;
+		text-align:center;
+		font-size:14px;
+		color:#fff;
+		display:none;
+	}
+	.commitText:hover .tougao{
+		display:block;
+	}
+	.logosign{
+		height:45px;
+		width:45px;
+		margin-top:6px;
+		background-image:url("../images/icons.png");
+		background-repeat: no-repeat;
+		background-position: -3px -297px;
+		background-color: #ccc
+	}
+	.logosignp{
+		display:none;
+		background-color:#f03a47;
+		height:45px;
+		width:90px;
+		line-height:45px;
+		text-align:center;
+		font-size:14px;
+		color:#fff;
+	}
+	.logosign:hover .logosignp{
+		display:block;
+	}
+
+	.logea,.signa{
+		color:#000;
+	}
+
+
+/* -----表单的提交----------------------------------------------------------------------- */
+
+	.logeSignWrap{
+		width:500px;
+		height:500px;
+		margin:0 auto;
+		padding-top:50px;
+
+	}
+	.leftLoge{
+		width:500px;
+		height:460px;
+		border:1px solid #ccc;
+		position:relative;
+		float:left;
+	
+
+
+	}
+	.rightSign{
+		width:500px;
+		height:460px;
+		border:1px solid #ccc;
+		position:relative;
+		float:left;
+
+	}
+	.logtop{
+		width:100px;
+		height:40px;
+		line-height:40px;
+		text-align:center;
+		position:absolute;
+		left:20px;
+		top:-20px;
+		font-size:30px;
+		background-color:#fff;
+
+	}
+	#logeForm{
+		margin:60px 0 0 50px;
+
+	}
+	#signForm{
+		margin:60px 0 0 50px;
+	}
+
+	.userName{
+		position:relative;
+		padding-left:80px;
+		margin-bottom:20px;
+
+	}
+	.userName:before{
+		content:"手机号:";
+		position:absolute;
+		left:0;
+		top:6px;
+	}
+	.userNameInput{
+		width:180px;
+		height:30px;
+		border:1px solid #ccc;
+
+	}
+	.password{
+		position:relative;
+		padding-left:80px;
+		margin-bottom:20px;
+	}
+	.password:before{
+		content:"密码:";
+		position:absolute;
+		left:0;
+		top:6px;
+
+	}
+	.passwordInput{
+		width:180px;
+		height:30px;
+		border:1px solid #ccc;
+
+	}
+	.surePassword{
+		position:relative;
+		padding-left:80px;
+		margin-bottom:20px;
+	}
+	.surePassword:before{
+		content:"确认密码:";
+		position:absolute;
+		left:0;
+		top:6px;
+
+	}
+	.surePasswordInput{
+		width:180px;
+		height:30px;
+		border:1px solid #ccc;
+
+	}
+	.getNum{
+		position:relative;
+		padding-left:80px;
+		margin-bottom:20px;
+		position:relative;
+	}
+	.getNum:before{
+		content:"验证码:";
+		position:absolute;
+		left:0;
+		top:6px;
+	}
+	.getNumInput{
+		width:90px;
+		height:30px;
+		border:1px solid #ccc;
+	}
+	.clickGetNum{
+		width:90px;
+		height:32px;
+		border:1px solid #ccc;
+		position:absolute;
+		left:173px;
+		top:0px;
+		text-align:center;
+		line-height:32px;
+		background-color:#737373;
+		color:#fff;
+		font-size:13px;
+
+	}
+	#clickGetScond{display:none;}
+
+
+
+	.submits{
+		position:relative;
+		padding-left:80px;
+		margin-bottom:20px;
+	}
+	
+	.submitsInput{
+		width:180px;
+		height:30px;
+		background-color:#737373;
+		color:#fff
+	}
+
+	.forgetPassword{
+		position:absolute;
+		left:265px;
+		top:6px;
+		font-size:12px;
+		text-decoration: underline
+	}
+	.inputError{
+		height:32px;
+		position:absolute;
+		left:265px;
+		top:0;
+		font-size:12px;
+		line-height:32px;
+		color:red;
+		display: none;
+
+	}

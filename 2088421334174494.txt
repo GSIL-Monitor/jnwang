@@ -1,94 +1,123 @@
 
+windows座机开机密码：12345
 
-http://www.guoxue.com/shibu/24shi/shiji/sjml.htm  国学的经典
-http://www.cnblogs.com/jiuweidezhanfang/p/5473118.html  git 的安装与使用
-https://www.cnblogs.com/susanws/p/5717811.html  手机端滑屏的使用
 
 
-小品：https://api.imjad.cn/qqfm/v1/?type=album&page_size=10&id=38970&page=1
-小品明细 ：https://api.imjad.cn/qqfm/v1/?type=show&id=rd000CKxRL0Niutv
-https://api.imjad.cn/qqfm/v1/?type=show&id=rd003gsc3u4OvhPH
-小品播放：https://api.imjad.cn/qqfm/v1/?type=skip_show&id=rd000CKxRL0Niutv&shows=rd000lkIdG2wIARY
-https://api.imjad.cn/qqfm/v1/?type=skip_show&id=rd003gsc3u4OvhPH&shows=rd000gSRhL0GS54K
+口碑服务商账号 1458813064@qq.com   Juniu5192136   （2018年9月之前已经不能使用）
 
-http://blog.csdn.net/bright2017/article/details/74188320   引入jQuery
+口碑商户账号   5192136@qq.com      Juniu2016（2018年1月8号修改的密码）
 
-http://blog.csdn.net/mr_wuch/article/details/70225364    vue开发环境引入echarts并使用。
+登陆的网址：koubei.com
 
-http://blog.csdn.net/zww1984774346/article/details/51498604   vue开发环境引入echarts并使用折线图。
+旧登陆的pid的账号：https://desk.diankayi.net/common/dev/operator.htm?pid=1 （更新后就不能使用，需要的话请靖男下架手艺人商品或者桔牛KTV预定商品）
 
-http://blog.csdn.net/generon/article/details/78447311  vue开发环境引入echarts并使用。
+新的登陆的pid的账号：https://g.juniuo.com/alipay/2016070101570609/201610140192630149/item/pc/debugEntry.do?pid=1
 
-http://echarts.baidu.com/tutorial.html#5%20%E5%88%86%E9%92%9F%E4%B8%8A%E6%89%8B%20ECharts   echarts使用说明
+打印机官网：http://yilianyun.10ss.net/user/login
 
-https://angular.cn/guide/quickstart  angular的学习
+打印机：账号：juniuo
+        密码：Juniuo@2016
 
+网址：https://exmail.qq.com/
 
-https://www.cnblogs.com/smuxiaolei/p/7484678.html  git的学习
+邮箱：wangzhiqiang@juniuo.com    密码S*********4
 
+美洽客服：wangzhiqiang@juniuo.com    密码S*********4
 
-vue开发环境选择图片上传：http://waynecz.github.io/VueImgInputer/index.html
+jira登录网址：http://jira.juniuo.com/login.jsp
 
- 路由三种传值方式网址 ;https://segmentfault.com/a/1190000012393587
+账号：wangzhiqiang   密码S*********4
 
+座机：010-8044-1899
 
-https://api.imjad.cn/qqfm.md   企鹅FM
+小程序的账号：15811392601   密码：000000
 
-https://etherscan.io/address/0x9d9207ed237d3294f01c93c22057390618bf6398#tokentxns     Eth查询桔牛的
+体验账号：13800138000 密码：koubei123456
 
-http://json.cn   转换json
+体验账号：13800138010密码：koubei123456
 
-www.ntfen.com/portal.php  韩国粉
+泽然给的账号：15811392601   密码：000000
 
-www.daodejing.org   道德经
+公司的手机号：18514664939  
 
-https://github.com  github使用
+公司微信：18514664939（ju-niu）   Juniu213015  
 
-lbs.amap.com/api/  高德地图的使用
+公司qq号：2082845751（桔牛科技）  Juniu213015 
 
-youchain.cc    有令的官网
+企业圈登录账号：18514664939    密码：Juniu213015 
 
-https://note.youdao.com/web/#/file/recent/default/WEBb03f8b5889b5fb58dab080f267fb9cfe/有道云
+   {主账号刘孟盈：18611083559  密码：Juniu213015 }
 
-https://www.aliyun.com/?utm_medium=text&utm_source=bdbrand&utm_campaign=bdbrand&utm_content=se_32492&accounttraceid=38dbe313-9afc-490c-b0f6-e686577874b7   阿里云
+uney微信：uney2018  电话：18201615871  密码：Juniu213015   
 
-https://juniuo.worktile.com/signin?returnUrl=%2F  需求的提交。
+山哥微信：18101312522   shange515   密码：Juniu213015   
 
-https://www.qyquan.cn/index/netjoin.html  企业圈的使用
 
-https://angular.cn/guide/quickstart  angular的使用与开发
+有令账号：13311335197  密码：S***********    支付密码：7*****  搬币工
 
+有令账号：18514664939  密码：J***********    支付密码：7***** 山哥
 
+有令账号：18730604163  密码：S***********    支付密码：7*****
 
 
+uney交易账号：18101312522  密码：Juniu213015   资金密码：213015
 
+uney交易账号：18730604163  密码：S**********4  资金密码：
 
+uney交易账号：18514664939  密码：Juniu213015   资金密码：213015
 
 
+------------------------
+1、配置hosts
+   打开C:\Windows\System32\drivers\etc路径下的hosts文件
+   在里面加上47.94.80.173 boss.uney.io 
 
+uney管理后台网址：https://boss.uney.io/#/   账号18730604163 密码Juniu213015
 
+---------------------------
 
 
 
 
 
+收银演示账号：17600332672 密码1234  (微信可以，支付宝不行）
 
+收银演示账号：15010741416   密码：123456（微信可以，支付宝不行）
 
+收银演示账号：15901022746 密码：123456  （微信支付宝都可以使用）
 
+提需求的网站：juniuo.worktile.com
+ 
+登录账号：wangzhiqiang@juniuo.com    密码：Juniu213015
 
 
+区块链连上查看上查看网址：https://etherscan.io/address/0x9d9207ed237d3294f01c93c22057390618bf6398#tokentxns
 
 
 
+桔牛子账号授权账号：5192136@qq.com#009   密码：Juniu213015  
 
+授权的子账号，在电脑手机都是可以使用的
 
+1 主账号 选择店长或者其他的角色，选择一键默认角色，将服务市场，和服务使用勾选上并选择使用服务的插件。设置完成 保存》
 
+2 子账号登录，选择服务市场---搜索订购桔牛插件，并确认订购。订购完成 手机上和电脑上就可以使用了。
 
 
+美团解除授权的流程只能在APP中：
 
+ 点击：点评管家---点击我的----点击授权----点击解除授权。
 
+解除之后重新再进入桔牛进行授权
 
 
+商家后台免费功能包括：
+1. 第三方平台的所有功能，美团、口碑的所有功能；
+2. 管理和设置的所有功能，包括门店、员工、职位权限、支付通道、短信通知、打印机、操作日志；不包括小程序。
+3. 概览功能；
+4. 收银模块的部分功能，包括散客收银、核销，不包括开卡、充值、扣卡等会员相关的功能；
+5. 产品管理功能；
+6. 软件购买功能。
 
 
 
@@ -100,22 +129,45 @@ https://angular.cn/guide/quickstart  angular的使用与开发
 
 
 
-大家晚上好，很不好意思，因为早上发的视频链接因为点击量过大，导致短链被封了，导致后面的小伙伴全部无法看到视频，很抱歉！
+桔牛2.0系统账号：18730604163  密码：Juniu213015
 
-所以晚上把原始链接同步给大家，如下：
+桔牛有令账号：13311335107   密码：S**********4
 
+桔牛有令微信：shange515   密码：邓姐知道
 
-λ  KTV预约（奖励50元/ 门店）
-http://v.youku.com/v_show/id_XMzE3NTUyNjMyMA==.html?spm=a2h3j.8428770.3416059.1
+个人小程序：shuanbuzhu@163.com     密码：s************4
 
+个人公众号：baiyusunrui@163.com    密码：s**************6
 
-λ  手艺人预约（奖励50元/ 门店）
-http://v.youku.com/v_show/id_XMzE3NTUyNDM2MA==.html?spm=a2h3j.8428770.3416059.1
+ueny  账号：18730604163   密码 S**********4
 
-λ  扫码枪一秒核销商品 
-http://v.youku.com/v_show/id_XMzE3NTQxNTUyNA==.html?spm=a2h3j.8428770.3416059.1
 
-λ  桔牛整套解决方案 （ 奖金1380元）
-http://v.youku.com/v_show/id_XMzE3NTg4OTE0MA==.html?spm=a2h3j.8428770.3416059.1
+
+
+好的，有问题您随时联系我们：微信18514664939   （ju-niu）  qq：2082845751   电话：01080441899
+
+
+徐朝阳的小程序账号及密码，系统使用的功能账号
+15533677252    J******6
+
+口碑功能的使用：https://g.juniuo.com/alipay/2016070101570609/201610140192630149/item/pc/debugEntry.do?pid=2088421334174494
+
+
+
+审美的账号：15001077146  密码：shasha122033
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

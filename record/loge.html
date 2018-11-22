@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<script src="./js/jquery-3.1.0.min.js"></script>
+
+	<link rel="stylesheet" href="./css/commentStyle.css">
+	<style>
+
+	</style>
+</head>
+<body>
+
+<div class="topNav clearfix">
+	<div class="topNavLeft"><img src="./images/logo.png" alt=""></div>
+	<div class="topNavMid">
+		<ul class="navUl clearfix">
+			<li class="navLi">首页</li>
+			<li class="navLi">文章</li>
+			<li class="navLi">图书</li>
+			<li class="navLi">视觉</li>
+			<li class="navLi">音乐</li>
+			<li class="navLi">视频</li>
+		</ul>
+	</div>
+	<div class="topNavRight">
+		<div class="searchtext"><input class="searchInput" type="text" value="搜索..." ><i class="searchh"></i></div>
+		<div class="ownCenter"></div>
+		<div class="logsign">
+			<a href="./loge.html" class="logea">登录</a>|
+			<a href="./sign.html" class="signa">注册</a>
+		</div>
+	</div>
+</div>
+
+
+<div class="logeSignWrap">
+	<div class="leftLoge">
+	<div class="logtop">登录</div>
+	<form action="" id="logeForm" method="get">
+		<div class="userName">
+			<input type="text" class="userNameInput" value="" onblur="nameBlur()" >
+			<div class="inputError"></div>
+		</div>
+		<div class="password">
+			<input type="password" class="passwordInput" value="" onblur="passwordBlur()" >
+			<div class="inputError"></div>
+
+		</div>
+		<div class="getNum">
+		    <input type="text" class="getNumInput" value="" onblur="getNum()"  >
+			<div class="clickGetNum" id="clickGetNum" type="button" >获取验证码</div>
+			<div class="clickGetNum" id="clickGetScond" type="button" ></div>
+			<div class="inputError"></div>
+
+		</div>
+		<div class="submits">
+			<input type="submit" class="submitsInput" value="登录">
+			 <i class="forgetPassword">忘记密码?</i>
+		 </div>
+	</form>
+	</div>
+	
+
+
+</div>
+
+
+
+
+	
+</body>
+</html>
+<script>
+
+/*表单的验证环节-------------------------*/
+
+	var $userName=$(".userName");
+	var $password=$(".password");
+	var $getNum=$(".getNum");
+	var $userNameInput=$(".userNameInput")[0];
+	var $passwordInput=$(".passwordInput")[0];
+	var $getNumInput=$(".getNumInput")[0];
+	var $submit=$(".submit")[0];
+	var phoneNum=/^(12|13|14|15|16|17|18|19)\d{9}/;
+	var passwordNum=/^\W{12}|\w{6}/;
+	var jiaoNum=/\d{6}/;
+function nameBlur(){
+	if($userNameInput.value==""){
+		$userName.find(".inputError").css({display:"block"}).html("请填写用户名")
+	}else{
+	   if(!phoneNum.test($userNameInput.value)){
+	   	$userName.find(".inputError").css({display:"block"}).html("请填手机号")
+	   }else{
+	   	$userName.find(".inputError").css({display:"none"})
+	  }
+	};
+};	
+function passwordBlur(){
+	if($passwordInput.value==""){
+		$password.find(".inputError").css({display:"block"}).html("请填写密码")
+	}else{
+		if(!passwordNum.test($passwordInput.value)){
+	   	$password.find(".inputError").css({display:"block"}).html("6-12位不可有符号")
+	   }else{
+	   	$password.find(".inputError").css({display:"none"})
+	  }
+		
+	};
+};	
+
+function getNum(){
+	if($getNumInput.value==""){
+		$getNum.find(".inputError").css({display:"block"}).html("请填写验证码")
+	}else{
+		if(!jiaoNum.test($getNumInput.value)){
+			$getNum.find(".inputError").css({display:"block"}).html("请填写6位数字")
+		}else{
+			$getNum.find(".inputError").css({display:"none"})
+
+		}
+	};
+};
+
+
+
+
+/*这里是获取倒计时的行为----------------*/
+var $clickGetNum=$("#clickGetNum");
+var $clickGetScond=$("#clickGetScond");
+var timerback;
+var timeNum=60;
+	$clickGetNum.click(function(){
+	    $clickGetScond.html(timeNum+ "s")
+		$clickGetNum.css({display:"none"})
+		$clickGetScond.css({display:"block"})
+		timerback=setInterval(function(){
+			if(timeNum>0){
+				timeNum--;
+				$clickGetScond.html(timeNum+ "s")
+			}else{
+				/*$clickGetNum.css({display:"none"})
+		        $clickGetScond.css({display:"block"})*/
+		        clearInterval(timerback);
+		        $clickGetNum.css({display:"block"})
+		        $clickGetScond.css({display:"none"})
+		       timeNum=60
+			}
+
+		},1000)
+
+
+	})
+</script>

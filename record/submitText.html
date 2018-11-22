@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我要投稿</title>
+		<script src="./js/jquery-3.1.0.min.js"></script>
+
+	<link rel="stylesheet" href="./css/commentStyle.css">
+	<style type=text/css>
+	.writeSelf{
+		width:1200px;
+			margin:0 auto;
+			height:80px;
+			font-size:30px;
+			text-align:center;
+			line-height:80px;
+
+	}
+		.contribution{
+			width:1200px;
+			margin:0 auto;
+			position:relative;
+			padding-bottom:60px;
+			margin-top:20px;
+		}
+		.toptitle{
+			width:740px;
+			height:50px;
+			font-size:20px;
+			
+			margin:0 auto;
+			position:relative;
+			padding-left:60px;
+
+
+		}.toptitle:before{
+			content:"标题：";
+			position:absolute;
+			left:0;
+			top:10px;
+		}
+		.toptitleInput{
+			display:block;
+			height:46px;
+			width:740px;
+			border-bottom:1px solid #ccc;
+			font-size:20px;
+		}
+		
+		.timeTheather{
+			font-size:12px;
+			color:#000;
+			height:16px;
+			width:280px;
+			position:absolute;
+			right:0;
+			top:-18px;
+
+
+		}
+		
+		textarea{
+			display:block;
+			width:800px;
+			height:250px;
+			font-size:20px;
+			line-height:30px;
+			text-indent: 2em;
+			margin:0 auto;
+			resize: none;
+			margin-top:10px;
+		}
+		.addTextarea{
+			position:absolute;
+			right:160px;
+			bottom:60px;
+			width:30px;
+			height:30px;
+			border:1px solid #ccc;
+			font-size:30px;
+			line-height:27px;
+			text-align: center;
+			color:#ccc;
+			border-radius: 50%
+		}
+		.addTextarea:hover{
+			cursor:pointer
+		}
+		.submitTextarea{
+			width:100px;
+			height:30px;
+			text-align: center;
+			line-height: 30px;
+			border:1px solid #ccc;
+			position:absolute;
+			right:0;
+			bottom:0;
+			left:0;
+			margin:auto;
+
+		}
+		.submitDuring{
+			width:100px;
+			height:30px;
+			text-align: center;
+			line-height: 30px;
+			border:1px solid #ccc;
+			position:absolute;
+			right:0;
+			bottom:0;
+			left:0;
+			margin:auto;
+			display:none;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="topNav clearfix">
+	<div class="topNavLeft"><img src="./images/logo.png" alt=""></div>
+	<div class="topNavMid">
+		<ul class="navUl clearfix">
+			<li class="navLi">首页</li>
+			<li class="navLi">文章</li>
+			<li class="navLi">图书</li>
+			<li class="navLi">视觉</li>
+			<li class="navLi">音乐</li>
+			<li class="navLi">视频</li>
+		</ul>
+	</div>
+	<div class="topNavRight">
+		<div class="searchtext"><input class="searchInput" type="text" value="搜索..." ><i class="searchh"></i></div>
+		<div class="ownCenter"></div>
+		<div class="logsign">
+			<a href="./loge.html" class="logea">登录</a>|
+			<a href="./sign.html" class="signa">注册</a>
+		</div>
+	</div>
+</div>
+
+	<div class="writeSelf">书写我的故事</div>
+	<div class="contribution" id="contribution">
+		<div class="toptitle">
+			<input class="toptitleInput" type="text">
+			<div class="timeTheather" id="timeTheather"></div>
+		</div>
+		<textarea class="textcontent" ></textarea>
+		<div class="addTextarea" onclick="addTextarea()">+</div>
+		<div class="submitTextarea" onclick="submitTextarea()">提交</div>
+		<div class="submitDuring" ></div>
+	</div>	
+	
+</body>
+</html>
+<script>
+/*日期和天气的显示*/
+	var $timeTheather=$("#timeTheather");
+	var nowTime=new Date();
+	var nowYear=nowTime.getFullYear();
+	var nowMonth=nowTime.getMonth()+1;
+	var nowDate=nowTime.getDate();
+	var week=nowTime.getDay();
+	var nowDay="";
+	var nowHourse=nowTime.getHours();
+	var wheathers=""
+	if (week == 0) {  
+	        nowDay = "星期日";  
+	} else if (week == 1) {  
+	        nowDay = "星期一";  
+	} else if (week == 2) {  
+	        nowDay = "星期二";  
+	} else if (week == 3) {  
+	        nowDay = "星期三";  
+	} else if (week == 4) {  
+	        nowDay = "星期四";  
+	} else if (week == 5) {  
+	        nowDay = "星期五";  
+	} else if (week == 6) {  
+	        nowDay = "星期六";  
+	} 
+	var citys="北京"
+		$.ajax({
+		 url: "http://wthrcdn.etouch.cn/weather_mini?city="+citys,
+		  context: document.body,
+		   success: function(res){
+		   	wheathers=JSON.parse(res).data.forecast[0].type;
+		   	$timeTheather.html(nowYear+"年"+nowMonth+"月"+nowDate+"日"+nowHourse+"时"+"|"+nowDay+"|"+citys+"|天气："+wheathers);
+     		}
+  		});
+
+		var $contribution=$("#contribution")
+		var $toptitleInput=$(".toptitleInput");
+		var $textcontent=document.getElementsByClassName("textcontent");
+		var $textcontentValueArr=[];
+		var $submitTextarea=$(".submitTextarea");
+		var $submitDuring=$(".submitDuring");
+		var submitTimer;
+		var submitTimerNum=15;
+		var NotKongString="";
+/*提交用户的书写内容到服务器里面*/
+		function submitTextarea(){
+//判断标题和段落是否为空病标红为空的文本框			
+			if($toptitleInput[0].value.trim()!=""){
+				for(var i=0;i<$textcontent.length;i++){
+					if($textcontent[i].value.trim()==""){
+						$textcontentValueArr.push($textcontent[i].value);
+						$textcontent[i].style.border="1px solid red"
+					}else{
+						$textcontentValueArr.push($textcontent[i].value)
+						$textcontent[i].style.border="1px solid #ccc"
+					};
+				}
+//判断数据都不能为空
+				NotKongString=$textcontentValueArr.every(isKongString);
+// 都不为空则提交后台数据
+				console.log({
+					"texttitle":$toptitleInput[0].value,
+					"paragraph":$textcontentValueArr,
+					"nowYear":nowYear,
+					"nowMonth":nowMonth,
+					"nowDate":nowDate,
+					"nowHourse":nowHourse,
+					"nowDay":nowDay,
+					"wheathers":wheathers
+				})				
+				if(NotKongString){
+					// 数据：console.log($textcontentValueArr,$toptitleInput[0].value)移交到服务器
+					/*$.ajax({
+								url:"http://shuanbuzhu.com/record/json/data1",
+								method:"get",
+								success:function(){
+									console.log(1111)
+								}
+							});*/
+/*防止用户恶意点击，对服务器造压力*/
+						submitTimer=setInterval(function(){
+							if(submitTimerNum>0){
+								$submitTextarea.css({display:"none"});
+								$submitDuring.css({display:"block"});
+								$submitDuring.html("提交中"+submitTimerNum+"秒");
+								submitTimerNum--;
+							}else{
+								submitTimerNum=15;
+								clearInterval(submitTimer);
+								$submitTextarea.css({display:"block"});
+								$submitDuring.css({display:"none"});
+							}
+						},1000);
+					//清除 当前的页面信息	
+					
+					for(var i=0;i<$textcontent.length;i++){
+						$textcontent[i].value=""
+					}
+					$toptitleInput[0].value=""
+				}
+			}else{
+				 $toptitleInput.css({border:"1px solid red"})
+			};
+			
+
+		}
+/*增加文章的段落代码*/
+
+		function addTextarea(){
+			$contribution.append("<textarea class='textcontent'></textarea>");
+			console.log($textcontent.length)
+		};
+		/*判断所有元素是不是都为空*/
+		function isKongString(element, index, array) {
+			return (element !="");
+		}
+
+</script>

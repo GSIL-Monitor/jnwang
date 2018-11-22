@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文章内容</title>
+	<script src="./js/jquery-3.1.0.min.js"></script>
+
+	<link rel="stylesheet" href="./css/commentStyle.css">
+
+	<style type=text/css>
+		.articlDec{
+			width:1200px;
+			border:1px solid red;
+			margin:0 auto;
+
+		}
+
+	</style>
+</head>
+<body>
+<div class="topNav clearfix">
+	<div class="topNavLeft"><img src="./images/logo.png" alt=""></div>
+	<div class="topNavMid">
+		<ul class="navUl clearfix">
+			<li class="navLi">首页</li>
+			<li class="navLi">文章</li>
+			<li class="navLi">图书</li>
+			<li class="navLi">视觉</li>
+			<li class="navLi">音乐</li>
+			<li class="navLi">视频</li>
+		</ul>
+	</div>
+	<div class="topNavRight">
+		<div class="searchtext"><input class="searchInput" type="text" value="搜索..." ><i class="searchh"></i></div>
+		<div class="ownCenter"></div>
+		<div class="logsign">
+			<a href="./loge.html" class="logea">登录</a>|
+			<a href="./sign.html" class="signa">注册</a>
+		</div>
+	</div>
+</div>
+
+<div class="articlDec">
+<p class="contensdec"style="padding: 15px;"></p>
+
+	
+</div>
+
+	
+</body>
+</html>
+<script>
+var loadurl=window.location.href;
+var idNum=loadurl.slice(loadurl.indexOf("?")+1).split("=")[1];
+var $contensdec=$(".contensdec");
+/*console.log(  loadurl.indexOf("?")+1 )
+console.log(  loadurl.slice(loadurl.indexOf("?")+1)  )
+console.log(  loadurl.slice(loadurl.indexOf("?")+1).split("=")[1] )*/
+
+	$.ajax({
+		url:"./json/data2.json",
+		method:"get",
+		success:function(res){
+			console.log(res)
+			for(var i=0;i<res.length;i++){
+				if(idNum==res[i].id){
+					console.log(1111)
+					$contensdec.html(res[i].content)
+					
+				}
+			}
+		}
+
+	})
+	
+</script>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>记录流</title>
+	<script src="./js/jquery-3.1.0.min.js"></script>
+	<link rel="stylesheet" href="./css/commentStyle.css">
+	<style type="text/css">
+	
+/* top 的样式 */
+.doc{
+	background-color:#f4f4f4;
+}
+.docTop{
+	height:100px;
+	font-size:14px;
+	padding-bottom:6px;
+}
+.inner{
+	width:1200px;
+	margin:0 auto;
+	height:95px;
+	border-bottom:1px solid #d9d9d9;
+
+}
+.docTopLeft{
+	line-height:28px;
+	padding-top:70px;
+	float:left;
+	width:40%;
+
+}
+#riqi{
+	float:left;
+}
+#zhou{
+	float:left;
+	margin-left:5px;
+}
+#tianqi{
+		margin-left:5px;
+
+	float:left;
+}
+
+.docTopMid{
+	float:left;
+	width:20%;
+	text-align:center;
+	padding-top:40px;
+	background-color:#f4f4f4;
+
+}
+.docTopMid img{
+	 width:50%;
+}
+.docTopRight{
+	float:right;
+	width:40%;
+	text-align:right;
+	padding-top:70px;
+	line-height:28px;
+	position:relative;
+}
+.wecgatIcon{
+	position:absolute;
+	right:16px;
+	bottom:-20px;
+	width:25px;
+	height:20px;
+	background-image:url("./images/icons.png");
+	background-repeat: no-repeat;
+	background-position: -389px -8px;
+}
+ .wecgatIcon:hover{
+	background-position: -389px -59px;
+} 
+
+
+/* banner 模块 */
+.banner{
+	height:360px;
+}
+.bInner{
+	width:1200px;
+	height:360px;
+	margin:0 auto;
+	overflow:hidden;
+	position:relative;
+}
+.bannerWrap{
+	height:360px;
+	position:absolute;
+	left:0;
+	top:0;
+	overflow: hidden;
+}
+.bannerSon{
+	float:left;
+	width:1200px;
+	height:360px;
+	overflow:hidden;
+}
+.main{
+	width:1200px;
+	margin:0 auto;
+}
+.mainSon{
+	float:left;
+	width:370px;
+	height:200px;
+	margin:10px 10px 0 0 ;
+	background-color:#fff;
+	position:relative;
+	padding-left:20px;
+}
+.mainSonh3{
+	margin-top:20px;
+	font-size:20px;
+	font-family: "微软雅黑",arial;
+	height:34px;
+	line-height:34px;
+	width:100%;
+	overflow:hidden;
+}
+.mainSonh3:hover .degistArticle{
+	color:#f03a47;
+}
+.degistArticle{
+	color:#000;
+}
+.mainSonTime{
+	height:34px;
+	line-height:34px;
+	font-size:12px;
+}
+.mainSonP{
+	height:40px;
+	line-height:20px;
+	font-size:12px;
+	overflow:hidden;
+}
+.typeArticle{
+	width:50px;
+	height:25px;
+	border:1px solid #ccc;
+	border-radius: 14px;
+	line-height:25px;
+	text-align:center;
+	background-color:#fff;
+	font-size:12px;
+}
+.typeArticle:hover {
+	color:#f03a47;
+	border:1px solid #f03a47;
+}
+.mainSonFavri{
+	position:absolute;
+	left:24px;
+	bottom:12px;
+	padding-left:5px;
+	width:25px;
+	height:10px;
+	font-size:12px;
+}
+	.iconFavri{
+		position:absolute;
+		left:0;
+		top:0;
+		width:12px;
+		height:10px;
+		background-image:url("./images/icons.png");
+		background-repeat: no-repeat;
+		background-position: -7px -375px;
+
+	}
+	.iconFavri:hover{
+		background-position: -34px -375px;
+	}
+	.FavriNum{
+		position:absolute;
+		left:15px;
+		top:-3px;
+		color:#d9d9d9;
+	}
+.mainSonStar{
+	position:absolute;
+	left:70px;
+	bottom:12px;
+	padding-left:5px;
+	width:25px;
+	height:10px;
+	font-size:12px;
+
+}
+	.iconStar{
+		position:absolute;
+		left:0;
+		top:0;
+		width:12px;
+		height:10px;
+		background-image:url("./images/icons.png");
+		background-repeat: no-repeat;
+		background-position: -7px -401px;
+	}
+	.iconStar:hover{
+		background-position: -34px -401px;
+	}
+	.StarNum{
+		position:absolute;
+		left:15px;
+		top:-3px;
+		color:#d9d9d9;
+	}
+.mainSonComments{
+	position:absolute;
+	left:111px;
+	bottom:12px;
+	padding-left:5px;
+	width:25px;
+	height:10px;
+	font-size:12px;
+
+}
+	.iconComments{
+		position:absolute;
+		left:0;
+		top:0;
+		width:12px;
+		height:10px;
+		background-image:url("./images/icons.png");
+		background-repeat: no-repeat;
+		background-position: -7px -428px;
+
+	}
+
+	.CommentsNum{
+		position:absolute;
+		left:15px;
+		top:-3px;
+		color:#d9d9d9;
+	}
+
+
+
+
+
+
+	
+
+	</style>
+</head>
+<body>
+<div class="doc">
+<!--顶部模块-->
+	<div class="docTop">
+		<div class="inner">
+			<div class="docTopLeft clearfix" id="docTopLeft">
+				<div id="riqi"></div>
+				<div id="zhou"></div>
+				<div id="tianqi"></div>
+			</div>
+			<div class="docTopMid"><img src="./images/logo.png" alt=""></div>
+			<div class="docTopRight"><i class="wecgatIcon"></i></div>
+		</div>
+	</div>
+
+<!--颈部模块-->
+<div class="banner">
+	<div class="bInner" id="bInner">
+
+		<ul class="bannerWrap clearfix" id="bannerWrap">
+			<li class="bannerSon"><img src="./images/banner1.jpg" alt=""></li>
+			<li class="bannerSon"><img src="./images/banner1.jpg" alt=""></li>
+			<li class="bannerSon"><img src="./images/banner1.jpg" alt=""></li>
+		</ul>
+	</div>
+</div> 
+
+<!--主体的载入-->
+<ul class="main clearfix" id="main">
+	
+</ul>
+
+<!--侧边栏的导航-->
+
+
+<div class="aside">
+	<div class="classType"></div>
+	<div class="commitText"><p class="tougao"><a href="./submitText.html" class="tougao">在线投稿</a></p></div>
+	<div class="logosign"><p class="logosignp"><a href="./loge.html" class="logosignp">登录注册</a></p></div>
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
+<script>
+/*获取当前的时间*/
+	var $riqi=$("#riqi");
+	var $zhou=$("#zhou");
+	var nowTime=new Date();
+	var nowYear=nowTime.getFullYear();
+	var nowMonth=nowTime.getMonth()+1;
+	var nowDate=nowTime.getDate();
+	var week=nowTime.getDay();
+	var nowDay="";
+	var nowHourse=nowTime.getHours();
+	if (week == 0) {  
+	        nowDay = "星期日";  
+	} else if (week == 1) {  
+	        nowDay = "星期一";  
+	} else if (week == 2) {  
+	        nowDay = "星期二";  
+	} else if (week == 3) {  
+	        nowDay = "星期三";  
+	} else if (week == 4) {  
+	        nowDay = "星期四";  
+	} else if (week == 5) {  
+	        nowDay = "星期五";  
+	} else if (week == 6) {  
+	        nowDay = "星期六";  
+	} 
+	$riqi.html(nowYear+"年"+nowMonth+"月"+nowDate+"日"+nowHourse+"时");
+	$zhou.html(nowDay)
+		$.ajax({
+		 url: "http://wthrcdn.etouch.cn/weather_mini?city=北京",
+		  context: document.body,
+		   success: function(res){
+		   	var $tianqi=$("#tianqi");
+			$tianqi.html("|天气："+JSON.parse(res).data.forecast[0].type)
+			// 使用jquery中的$.ajax,请求出来的是一个json字符，需要将字符转换成jason
+		   //	console.log( JSON.parse(res).data.forecast[0].type)
+     		}
+  		});
+			
+/*轮播图的写入*/
+  		var $bInner=$("#bInner");
+  		var $bannerWrap=$("#bannerWrap");
+  		var $arrBannerSon=$(".bannerSon");
+  		//console.log($arrBannerSon.length)
+		 $bannerWrap.css({"width":1220*$arrBannerSon.length+"px"})
+  		var timer;
+  		var countnum=0;
+  		function dingOnOff(){
+			// clearInterval(timer);
+			timer=setInterval(function(){
+				if(countnum<$arrBannerSon.length-1){
+					countnum++;
+					$bannerWrap.animate({left:-1200*countnum+"px"},"slow");
+					//console.log(countnum)
+				}else{
+					countnum=0;
+					$bannerWrap.animate({left:-1200*countnum+"px"},"slow");
+					//clearInterval(timer)
+				}
+
+			},3000)
+  		};
+  		dingOnOff();
+  		$bInner.mouseenter(function(){
+  			clearInterval(timer)
+  		})
+  		$bInner.mouseleave(function(){
+  			dingOnOff();
+  		})
+
+  		/*数据的显示*/
+
+  		var $main=$("#main");
+  		var favoedArr=[];
+  		function changeColor (cansu){
+						
+						/*var iconFavriArr=$(".iconFavri");
+						
+
+						if(favoedArr[cansu]==0){
+							iconFavriArr[cansu].style.backgroundPosition="-34px -375px"
+						}else{
+							iconFavriArr[cansu].style.backgroundPosition="-34px -375px"
+						}*/
+				};
+  		$.ajax({
+			url: "./json/data1.json",
+			context: document.body,
+			success: function(res){
+				
+				for(var i=0;i<res.length;i++){
+					
+					$main.append('<li class="mainSon"><div class="mainSonh3"><a href="secondPage.html?id='+res[i].id+'" class="degistArticle">'+res[i].title+'</a></div><div class="mainSonTime">'+res[i].date+'</div><p class="mainSonP">'+res[i].context+'</p><div class="typeArticle">'+res[i].c_title+'</div><div class="mainSonFavri"><i class="iconFavri" onclick="changeColor('+i+')"></i><i class="FavriNum">'+res[i].love+'</i></div><div class="mainSonStar"><i class="iconStar" onclick="changeColor('+i+')"></i><i class="StarNum">'+res[i].favo+'</i></div><div class="mainSonComments"><i class="iconComments" ></i><i class="CommentsNum">'+res[i].comment+'</i></div></li>');
+
+					var iconFavriArr=$(".iconFavri");
+					var iconStarArr=$(".iconStar");
+					//console.log(res[i].favoed)
+					if(res[i].favoed!=0){
+					//	console.log(iconFavriArr[i])
+						iconFavriArr[i].style.backgroundPosition="-34px -375px"
+						iconStarArr[i].style.backgroundPosition="-34px -401px"
+					}else{
+						iconFavriArr[i].style.backgroundPosition="-7px -375px"
+						iconStarArr[i].style.backgroundPosition="-7px -401px"
+					}
+				};
+
+				
+				
+
+				
+
+				
+				
+				
+
+				
+				
+			}
+
+  		});
+  		
+
+
+
+
+</script>
